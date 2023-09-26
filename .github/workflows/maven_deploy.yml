@@ -27,4 +27,3 @@ jobs:
         run: |
           echo "<settings><servers><server><id>github</id><username>${ACTOR}</username><password>${TOKEN_MVN}</password></server></servers></settings>" > ~/.m2/settings.xml
           cat ~/.m2/settings.xml
-          mvn deploy
