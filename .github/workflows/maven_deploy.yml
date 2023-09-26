@@ -1,0 +1,30 @@
+name: Maven Package and Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Deploy to Github Package Registry
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_MVN }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          mkdir ~/.m2
+          echo "<settings><servers><server><id>github</id><username>${ACTOR}</username><password>${TOKEN_MVN}</password></server></servers></settings>" > ~/.m2/settings.xml
+          mvn deploy
