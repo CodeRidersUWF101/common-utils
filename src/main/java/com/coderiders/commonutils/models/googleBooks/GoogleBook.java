@@ -1,4 +1,4 @@
-package com.coderiders.commonutils.googleBooks;
+package com.coderiders.commonutils.models.googleBooks;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
