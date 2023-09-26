@@ -25,5 +25,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN_MVN }}
           ACTOR: ${{ secrets.MVN_ACTOR }}
         run: |
-          echo "<settings><servers><server><id>github</id><username>${ACTOR}</username><password>${TOKEN_MVN}</password></server></servers></settings>" > ~/.m2/settings.xml
-          cat ~/.m2/settings.xml
+          echo "<settings><servers><server><id>github</id><username>${ACTOR}</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
+          mvn deploy
