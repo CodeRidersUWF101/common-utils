@@ -4,7 +4,7 @@
     <groupId>com.coderiders</groupId>
     <artifactId>common-utils</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.4-SNAPSHOT</version>
     <name>common-utils</name>
     <url>http://maven.apache.org</url>
 
@@ -39,7 +39,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub CodeRidersUWFCapstone Apache Maven Packages</name>
+            <name>GitHub CodeRidersUWF101 Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/CodeRidersUWF101/common-utils</url>
         </repository>
     </distributionManagement>
