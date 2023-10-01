@@ -9,7 +9,7 @@ import java.sql.Timestamp;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserLibrary {
+public class UserLibraryWithBookDetails {
     private String book_id;
     private String api_id;
     private String title;
