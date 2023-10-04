@@ -1,15 +1,20 @@
 package com.coderiders.commonutils.models;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserLibraryWithBookDetails {
+@Jacksonized
+public class UserLibraryWithBookDetails implements Serializable {
     private String book_id;
     private String api_id;
     private String title;
