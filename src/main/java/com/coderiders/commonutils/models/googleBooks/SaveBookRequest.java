@@ -14,7 +14,5 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SaveBookRequest {
     private String clerkId;
-    private String isbn10;
-    private String isbn13;
     private UserLibraryWithBookDetails book;
 }
