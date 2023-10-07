@@ -19,5 +19,6 @@ public class User implements Serializable {
     private String firstName;
     private String lastName;
     private String clerkId;
+    private String imageUrl;
 
 }
