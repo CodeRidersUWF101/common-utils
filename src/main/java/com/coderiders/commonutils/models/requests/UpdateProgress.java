@@ -14,6 +14,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateProgress implements Serializable {
-    private String book_id;
-    private int current_page;
+    private String clerkId;
+    private String bookId;
+    private int currentPage;
 }
