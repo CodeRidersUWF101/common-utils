@@ -1,5 +1,6 @@
 package com.coderiders.commonutils.models.googleBooks;
 
+import com.coderiders.commonutils.models.User;
 import com.coderiders.commonutils.models.UserLibraryWithBookDetails;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -13,6 +14,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class SaveBookRequest {
-    private String clerkId;
+    private User user;
     private UserLibraryWithBookDetails book;
 }
