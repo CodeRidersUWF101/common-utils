@@ -32,9 +32,11 @@ public class UserLibraryWithBookDetails implements Serializable {
     private String maturity_rating;
     private String small_thumbnail;
     private String thumbnail;
+
     private String reading_status;
     private Integer last_page_read;
     private Timestamp last_reading_update;
+
     private boolean isInLibrary;
 }
 
