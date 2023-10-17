@@ -21,6 +21,7 @@ public class UserChallengesExtraDTO {
     private ChallengeFrequency frequency;
     private BadgeType type;
     private int threshold;
+    private int duration;
     private LocalDateTime challengeStartDate;
     private LocalDateTime challengeEndDate;
     private int pointsAwarded;
@@ -42,6 +43,7 @@ public class UserChallengesExtraDTO {
                 .frequency(dto.frequency())
                 .type(dto.type())
                 .threshold(dto.threshold())
+                .duration(dto.duration())
                 .challengeEndDate(dto.challengeEndDate())
                 .challengeStartDate(dto.challengeStartDate())
                 .pointsAwarded(dto.pointsAwarded())
@@ -57,6 +59,7 @@ public class UserChallengesExtraDTO {
                 .description(challenges.getDescription())
                 .frequency(challenges.getFrequency())
                 .type(challenges.getType())
+                .duration(challenges.getDuration())
                 .threshold(challenges.getThreshold())
                 .challengeEndDate(challenges.getEndDate())
                 .challengeStartDate(challenges.getStartDate())
