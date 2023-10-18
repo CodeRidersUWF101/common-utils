@@ -1,3 +1,6 @@
 package com.coderiders.commonutils.models.records;
 
-public record AdditionalChallengeInfo ( double done, double toGo, double percentComplete) {}
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record AdditionalChallengeInfo (Double done, Double toGo, Double percentComplete) {}

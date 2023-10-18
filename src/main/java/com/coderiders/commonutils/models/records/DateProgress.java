@@ -1,3 +1,6 @@
 package com.coderiders.commonutils.models.records;
 
-public record DateProgress(double progress, int daysCompleted, int daysRemaining) {}
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record DateProgress(Double progress, Integer daysCompleted, Integer daysRemaining) {}
