@@ -1,8 +1,6 @@
 package com.coderiders.commonutils.utils;
 
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 public class ConsoleFormatter {
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_BOLD = "\u001B[1m";
