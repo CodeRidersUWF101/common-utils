@@ -6,6 +6,7 @@ import com.coderiders.commonutils.models.enums.ChallengeFrequency;
 import com.coderiders.commonutils.models.records.AdditionalChallengeInfo;
 import com.coderiders.commonutils.models.records.DateProgress;
 import com.coderiders.commonutils.models.records.UserChallengesDTO;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Builder;
 import lombok.Data;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserChallengesExtraDTO {
     private long id;
     private long userChallengeId;
