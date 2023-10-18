@@ -24,11 +24,11 @@ public class UserChallengesExtraDTO {
     private String type;
     private int threshold;
     private int duration;
-    private LocalDateTime challengeStartDate;
-    private LocalDateTime challengeEndDate;
+    private String challengeStartDate;
+    private String challengeEndDate;
     private int pointsAwarded;
-    private LocalDateTime userChallengeStartDate;
-    private LocalDateTime userChallengeEndDate;
+    private String userChallengeStartDate;
+    private String userChallengeEndDate;
     private String status;
 
 
