@@ -29,7 +29,7 @@ public class UserChallengesExtraDTO {
     private int pointsAwarded;
     private LocalDateTime userChallengeStartDate;
     private LocalDateTime userChallengeEndDate;
-    private ActivityAction status;
+    private String status;
 
 
     private DateProgress dateProgress;
