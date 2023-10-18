@@ -1,8 +1,5 @@
 package com.coderiders.commonutils.models;
 
-import com.coderiders.commonutils.models.enums.ActivityAction;
-import com.coderiders.commonutils.models.enums.BadgeType;
-import com.coderiders.commonutils.models.enums.ChallengeFrequency;
 import com.coderiders.commonutils.models.records.AdditionalChallengeInfo;
 import com.coderiders.commonutils.models.records.DateProgress;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -19,16 +16,16 @@ public class UserChallengesExtraDTO {
     private Long userChallengeId;
     private String name;
     private String description;
-    private ChallengeFrequency frequency;
-    private BadgeType type;
+    private String frequency;
+    private String type;
     private Integer threshold;
     private Integer duration;
-    private LocalDateTime challengeStartDate;
-    private LocalDateTime challengeEndDate;
+    private String challengeStartDate;
+    private String challengeEndDate;
     private Integer pointsAwarded;
-    private LocalDateTime userChallengeStartDate;
-    private LocalDateTime userChallengeEndDate;
-    private ActivityAction status;
+    private String userChallengeStartDate;
+    private String userChallengeEndDate;
+    private String status;
 
 
     private DateProgress dateProgress;
