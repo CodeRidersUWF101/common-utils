@@ -26,4 +26,5 @@ public class UserBadge {
     private String imageUrl;
     private Integer pointsAwarded;
     private LocalDateTime dateEarned;
+    private AdditionalChallengeInfo additionalBadgeInfo;
 }
