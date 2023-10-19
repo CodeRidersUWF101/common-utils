@@ -18,4 +18,5 @@ public class UpdateProgress implements Serializable {
     private String bookId;
     private int currentPage;
     private int pagesRead;
+    private String action;
 }
