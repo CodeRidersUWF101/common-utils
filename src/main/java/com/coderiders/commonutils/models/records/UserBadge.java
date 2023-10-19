@@ -1,19 +1,29 @@
 package com.coderiders.commonutils.models.records;
 
 import com.coderiders.commonutils.models.enums.BadgeType;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
 import java.time.LocalDateTime;
 
-public record UserBadge (
-        long id,
-        String name,
-        String description,
-        int threshold,
-        BadgeType type,
-        short tier,
-        String imageUrl,
-        int pointsAwarded,
-        LocalDateTime dateEarned
-) {
-
+@Data
+@Builder
+@Jacksonized
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class UserBadge {
+    private Long id;
+    private String name;
+    private String description;
+    private Integer threshold;
+    private BadgeType type;
+    private Short tier;
+    private String imageUrl;
+    private Integer pointsAwarded;
+    private LocalDateTime dateEarned;
 }

@@ -1,25 +1,36 @@
 package com.coderiders.commonutils.models.records;
 
 
-
 import com.coderiders.commonutils.models.enums.ActivityAction;
 import com.coderiders.commonutils.models.enums.BadgeType;
 import com.coderiders.commonutils.models.enums.ChallengeFrequency;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
 import java.time.LocalDateTime;
 
-public record UserChallengesDTO (
-        long id,
-        long userChallengeId,
-        String name,
-        String description,
-        ChallengeFrequency frequency,
-        BadgeType type,
-        int threshold,
-        int duration,
-        LocalDateTime challengeStartDate,
-        LocalDateTime challengeEndDate,
-        int pointsAwarded,
-        LocalDateTime userChallengeStartDate,
-        ActivityAction status
-) {}
+@Data
+@Builder
+@Jacksonized
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class UserChallengesDTO {
+    private Long id;
+    private Long userChallengeId;
+    private String name;
+    private String description;
+    private ChallengeFrequency frequency;
+    private BadgeType type;
+    private Integer threshold;
+    private Integer duration;
+    private LocalDateTime challengeStartDate;
+    private LocalDateTime challengeEndDate;
+    private Integer pointsAwarded;
+    private LocalDateTime userChallengeStartDate;
+    private ActivityAction status;
+}

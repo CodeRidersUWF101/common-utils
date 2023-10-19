@@ -1,4 +1,4 @@
-package com.coderiders.commonutils.models.records;
+package com.coderiders.commonutils.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
@@ -13,8 +13,7 @@ import lombok.extern.jackson.Jacksonized;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class AdditionalChallengeInfo {
-    private Double done;
-    private Double toGo;
-    private Double percentComplete;
+public class AdditionalStatus{
+    private String statusCode;
+    private String statusDescription;
 }

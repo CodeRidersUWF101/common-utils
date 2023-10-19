@@ -1,14 +1,26 @@
 package com.coderiders.commonutils.models.records;
 
 import com.coderiders.commonutils.models.enums.BadgeType;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
 
-public record Badge (
-        long id,
-        String name,
-        String description,
-        int threshold,
-        BadgeType type,
-        short tier,
-        String imageUrl,
-        int pointsAwarded
-) {}
+@Data
+@Builder
+@Jacksonized
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Badge {
+        Long id;
+        String name;
+        String description;
+        Integer threshold;
+        BadgeType type;
+        Short tier;
+        String imageUrl;
+        Integer pointsAwarded;
+}
