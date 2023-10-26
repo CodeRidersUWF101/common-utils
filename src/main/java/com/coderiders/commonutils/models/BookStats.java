@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 
+import java.time.LocalDateTime;
+
 @Data
 @Builder
 @Jacksonized
@@ -14,4 +16,6 @@ import lombok.extern.jackson.Jacksonized;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class BookStats {
+    private int pagesRead;
+    private LocalDateTime dateRead;
 }
