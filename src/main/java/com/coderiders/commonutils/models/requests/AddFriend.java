@@ -16,4 +16,5 @@ import lombok.NoArgsConstructor;
 public class AddFriend {
     private String requestingClerkId;
     private String friendToAddClerkId;
+    private String successString;
 }
