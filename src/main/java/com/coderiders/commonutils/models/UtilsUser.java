@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Jacksonized
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements Serializable {
+public class UtilsUser implements Serializable {
 
     private String username;
     private String firstName;
